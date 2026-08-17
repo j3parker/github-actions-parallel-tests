@@ -1,0 +1,23 @@
+on: push
+
+jobs:
+  job:
+    runs-on:  ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - parallel:
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
+        - uses: ./
